@@ -4,13 +4,21 @@ function generatePassword () {
     }
   
 
-function setRequirements () {
-   var hasUpper = confirm("Would you like to include uppercase characters? For NO please select CANCEL.")
-   var hasLower = confirm("Would you like to include Lowercase characters For NO please select CANCEL.?")
-   var hasSpecial = confirm("Would you like to include Special characters? For NO please select CANCEL.")
-   var hasNumber = confirm("Would you like to include Numbers? For NO please select CANCEL.")
-}
+// function setRequirements () {
+//    var hasUpper = confirm("Would you like to include Uppercase characters? For NO please select CANCEL.")
+//    var hasLower = confirm("Would you like to include Lowercase characters For NO please select CANCEL.?")
+//    var hasSpecial = confirm("Would you like to include Special characters? For NO please select CANCEL.")
+//    var hasNumber = confirm("Would you like to include Numbers? For NO please select CANCEL.")
+// }
+var characterPool = [];
+var hasUpper = "'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'";
   
+var hasUpper = confirm("Would you like to include Uppercase characters? For NO please select CANCEL.");
+if (hasUpper == true) {
+    for (var i = 0; i < hasUpper.length; i++) {
+        console.log("yes");
+    }
+}
 
 
 generatePassword();
