@@ -17,8 +17,7 @@ function passwordErrorChecker() { // This function is to display errors to the c
         //     generatePassword();
         // }
 }
-
-    passwordErrorChecker();
+passwordErrorChecker();
 
 //========== Character Pool ===========
 
