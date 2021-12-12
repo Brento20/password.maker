@@ -8,7 +8,7 @@ function passwordErrorChecker() { // This function is to display errors to the c
     if (passwordLength <= 7) {
         alert("Password too short, please try again!");
         generatePassword();
-       }  else if (passwordLength >= 127) {
+       }  else if (passwordLength >= 129) {
            alert("Password too long, please try again!");
            generatePassword();
        }
@@ -62,14 +62,13 @@ if (hasNumber == true) {
 
 // Next steps - use math.random in a for loop to pull out characters from the character pool and pass them onto a new variable for the complete password
 
-function compilePassword () {
-
-    for ( i = 0 ; i < passwordLength ; i++ )
-    var password = "";
-    Math.floor(Math.random() * characterPool.length);
-    password.push(characterPool * i);
-}
-
-compilePassword ();
-
-console.log(password)
+var Password = "";
+for (var i = 0; i < passwordLength; i++) {
+    characterPool[
+        Math.floor(Math.random() * characterPool.length)];
+    Password +=
+       characterPool[
+           Math.floor(Math.random() * characterPool.length)
+       ];
+   }
+console.log(Password)
