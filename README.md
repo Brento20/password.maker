@@ -1,6 +1,6 @@
 # READ ME - Brenton Weaver Password Maker
 
-Link: 
+Link: https://brento20.github.io/password.maker/
 
 **GIVEN** I need a new, secure password
 **WHEN** I click the button to generate a password
@@ -26,34 +26,50 @@ Link:
 
 | Task | Status |
 |--|--|
-| Button activates JavaScript |  |
+| Button activates JavaScript | Complete |
 | User can select password length | Complete |
 | User can select Upper/Lower or Special Characters   | Complete |
 | Password includes the user selected criteria | Complete |
-| Te password is displayed on the page or in a alert prompt | |
+| The password is displayed on the page or in a alert prompt | Complete |
 
 
 
 **The following build was attempted by Brenton Weaver - Brento20 - brenton.weaver@gmail.com**
 
 
- 1. Chicken Scribble.
- 2. Logic Plan.
- 3. JavaScript
- 4. Future Improvements
-
-## Chicken Scribble.
-
-TBC
+ 
+ 1. Logic Plan.
+ 2. Future Improvements.
+ 3. Screenshots of deployed application.
 
 ## Logic Plan.
 
-## JavaScript.
+When a user clicks the Generate Password Button:
 
- TBC
+1. an prompt window opens asking for a number
+2. this input is checked to make sure is a number equal to or greater than 8, equal to or lesser than 128 and is equal to a number. 
+3. If incorrect input, a return fills the html text box with an error message and a alert tells the user how to correct the error.
+4. the user is prompted to select if they want Upper/Lower/Special or numbers included int the password.
+5. Confirms trigger a boolean to push a set of characters into an empty array called characterPool.
+6. The passwordLength and characterPool are fed into a for loop that uses math.random to pull a random string matching the desired length and its returned to the HTML text box.
 
-## Future improvments.
+
+## Future improvements.
 
 1. Error messages; I still need to work out why I cant get the error message to work on alpha characters.
 2. I also should work out how to get the upper/lower/special/number arrays that i defined with the var to actually push into the characterPool.
 3. When the user selects no character sets it should hae an error message.
+
+## Screenshots of deployed application.
+
+Example of the first prompt message:
+![Prompt message](./assets/images/prompt.png)
+
+Example of an error alert:
+![Alert message](./assets/images/alert.png)
+
+Example of text returned to html after an error:
+![Textbox message](./assets/images/error_message_in_textbox.png)
+
+Example of password with all character sets, and a length of 60.
+![Generated password](./assets/images/displayed_password.png)

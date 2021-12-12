@@ -14,17 +14,17 @@ function writePassword() {
         var passwordLength = parseInt(passwordLength);
         
         
-          // generatePassword();
-          //=============================
+       
+          // This set of it statements is to make sure we get a valid input form the user
       if (passwordLength <= 7) {
           alert("Password too short, please try again!");
           return "Press Generate Password to try again";
       }  else if (passwordLength >= 129) {
           alert("Password too long, please try again!");
           return "Press Generate Password to try again";
-      }  else if (passwordLength != NaN) {
-          alert("Password cannot contain letters, please try again!");
-          return "Press Generate Password to try again";
+      // }  else if (passwordLength != NaN) {
+      //     alert("Password cannot contain letters, please try again!");
+      //     return "Press Generate Password to try again";
       };
           
 
