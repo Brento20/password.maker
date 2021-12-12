@@ -22,7 +22,11 @@ function writePassword() {
       }  else if (passwordLength >= 129) {
           alert("Password too long, please try again!");
           return "Press Generate Password to try again";
-      }  
+      }  else if (passwordLength != NaN) {
+          alert("Password cannot contain letters, please try again!");
+          return "Press Generate Password to try again";
+      };
+          
 
 
     var characterPool = []; // The empty array to be filled with characters as selected by user
