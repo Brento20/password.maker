@@ -29,7 +29,7 @@ Link:
 | Button activates JavaScript |  |
 | User can select password length | Complete |
 | User can select Upper/Lower or Special Characters   | Complete |
-| Password includes the user selected criteria |  |
+| Password includes the user selected criteria | Complete |
 | Te password is displayed on the page or in a alert prompt | |
 
 
@@ -37,11 +37,10 @@ Link:
 **The following build was attempted by Brenton Weaver - Brento20 - brenton.weaver@gmail.com**
 
 
- 1. . Chicken Scribble.
- 2. . Logic Plan.
- 3. . JavaScript
- 4. . File Structure
- 5. . Future Improvments
+ 1. Chicken Scribble.
+ 2. Logic Plan.
+ 3. JavaScript
+ 4. Future Improvements
 
 ## Chicken Scribble.
 
@@ -53,10 +52,8 @@ TBC
 
  TBC
 
-## File structure.
-
-TBC
-
 ## Future improvments.
 
-TBC
+1. Error messages; I still need to work out why I cant get the error message to work on alpha characters.
+2. I also should work out how to get the upper/lower/special/number arrays that i defined with the var to actually push into the characterPool.
+3. When the user selects no character sets it should hae an error message.

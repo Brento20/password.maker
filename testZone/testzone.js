@@ -62,7 +62,7 @@ if (hasNumber == true) {
 
 // Next steps - use math.random in a for loop to pull out characters from the character pool and pass them onto a new variable for the complete password
 
-var Password = "";
+var Password = ""; // "" will be set after the loop runs for the passwordLength and merges the random math and array values
 for (var i = 0; i < passwordLength; i++) {
     characterPool[
         Math.floor(Math.random() * characterPool.length)];
