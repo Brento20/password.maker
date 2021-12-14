@@ -26,7 +26,7 @@ function writePassword() {
           alert("Password cannot contain letters, please try again!");
             return "Press Generate Password to try again";
       };
-    
+
    
 
 
