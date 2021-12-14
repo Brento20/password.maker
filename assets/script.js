@@ -11,7 +11,7 @@ function writePassword() {
 
       function generatePassword () {
         passwordLength = prompt("How long do you want your password to be? Password must be between 8 - 128 characters.");
-        // var passwordLength = parseInt(passwordLength);
+        var passwordLength = parseInt(passwordLength);
         
         
        
@@ -22,12 +22,12 @@ function writePassword() {
       }  else if (passwordLength >= 129) {
           alert("Password too long, please try again!");
             return "Press Generate Password to try again";
-      }
-    //   }    else if (passwordLength === isNaN) {
-    //       alert("Password cannot contain letters, please try again!");
-    //         return "Press Generate Password to try again";
-    //   };
-          
+      }   else if (isNaN(passwordLength)) {
+          alert("Password cannot contain letters, please try again!");
+            return "Press Generate Password to try again";
+      };
+    
+   
 
 
     var characterPool = []; // The empty array to be filled with characters as selected by user
@@ -64,6 +64,7 @@ function writePassword() {
     }
  return newPassword;
 }
+
 
 
 // Add event listener to generate button
