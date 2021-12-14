@@ -34,23 +34,23 @@ function writePassword() {
       
         var hasUpper = confirm("Would you like to include Uppercase characters?"); // each will push into the above array (characterPool)
             if (hasUpper == true) {
-                characterPool.push('ABCDEFGHIJKLMONPQRSTUVWXYZ'.split(','));
+                characterPool.push('A','B','C','D','E','F','G','H','I','J','K','L','M','O','N','P','Q','R','S','T','U','V','W','X','Y','Z');
         }
 
         var hasLower = confirm("Would you like to include Lowercase characters?");
             if (hasLower == true) {
-                characterPool.push('abcdefghijklmnopqrstuvwxyz'.split(','));
+                characterPool.push('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
         }
 
 
         var hasSpecial = confirm("Would you like to include Special characters?");
             if (hasSpecial == true) {
-                characterPool.push('`~!@#$%^&*()_-+={[}]:;"<>?>'.split(','));
+                characterPool.push('~','!','@','#','$','%','^','&','*','(',')','_','-','+','=','{','[','}',']',':',';');
         }
 
         var hasNumber = confirm("Would you like to include Numeric characters?");
             if (hasNumber == true) {
-                characterPool.push('1234567890'.split(','));
+                characterPool.push('1','2','3','4','5','6','7','8','9','0');
         }
 
     var newPassword = ""; //the below runs a for loop to fill each space in the passwordLength with a array item from characterPool then return pulls the result out of the function.
