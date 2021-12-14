@@ -47,7 +47,10 @@ Link: https://brento20.github.io/password.maker/
 When a user clicks the Generate Password Button:
 
 1. A prompt window opens asking for a number.
-2. This input is checked to make sure is a number equal to or greater than 8, equal to or lesser than 128 and is equal to a number. 
+    -use prompt to ask for user input
+    -store in a var passwordLength
+2. This input is checked to make sure is a number equal to or greater than 8, equal to or lesser than 128 and is equal to a number.
+    -use if and else if statements for this step
 3. If incorrect input, a return fills the html text box with an error message and a alert tells the user how to correct the error.
 4. The user is prompted to select if they want Upper/Lower/Special or numbers included int the password.
 5. Confirms trigger a boolean to push a set of characters into an empty array called characterPool.
@@ -59,6 +62,7 @@ When a user clicks the Generate Password Button:
 1. Error messages; I still need to work out why I cant get the error message to work on alpha characters. -- worked out!!!
 2. I also should work out how to get the upper/lower/special/number arrays that i defined with the var to actually push into the characterPool. -- worked out!!!
 3. When the user selects no character sets it should have an error message. --- not done
+4. use the .splice method to make the arrays more readable.
 
 ## Screenshots of deployed application.
 
