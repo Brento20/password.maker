@@ -7,31 +7,31 @@ function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
-  }
+}
 
-      function generatePassword () {
+    function generatePassword () {
         passwordLength = prompt("How long do you want your password to be? Password must be between 8 - 128 characters.");
         var passwordLength = parseInt(passwordLength);
         
         
-       
+    
           // This set of it statements is to make sure we get a valid input form the user
-      if (passwordLength <= 7) {
-          alert("Password too short, please try again!");
+    if (passwordLength <= 7) {
+        alert("Password too short, please try again!");
             return "Press Generate Password to try again";
-      }  else if (passwordLength >= 129) {
-          alert("Password too long, please try again!");
+    }  else if (passwordLength >= 129) {
+        alert("Password too long, please try again!");
             return "Press Generate Password to try again";
-      }   else if (isNaN(passwordLength)) {
-          alert("Password cannot contain letters, please try again!");
+    }   else if (isNaN(passwordLength)) {
+        alert("Password cannot contain letters, please try again!");
             return "Press Generate Password to try again";
-      };
+    };
 
-   
+
 
 
     var characterPool = []; // The empty array to be filled with characters as selected by user
-      
+
         var hasUpper = confirm("Would you like to include Uppercase characters?"); // each will push into the above array (characterPool)
             if (hasUpper == true) {
                 characterPool.push('A','B','C','D','E','F','G','H','I','J','K','L','M','O','N','P','Q','R','S','T','U','V','W','X','Y','Z');
@@ -55,14 +55,14 @@ function writePassword() {
 
     var newPassword = ""; //the below runs a for loop to fill each space in the passwordLength with a array item from characterPool then return pulls the result out of the function.
     for (var i = 0; i < passwordLength; i++) {
-          characterPool[
+        characterPool[
             Math.floor(Math.random() * characterPool.length)];
-      newPassword +=
-          characterPool[
+        newPassword +=
+            characterPool[
             Math.floor(Math.random() * characterPool.length)
         ];
     }
- return newPassword;
+return newPassword;
 }
 
 
